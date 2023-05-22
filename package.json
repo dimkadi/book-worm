@@ -1,0 +1,57 @@
+{
+  "name": "bookworm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "seederStorage": "sequelize",
+  "seederStorageTableName": "SequelizeData",
+  "scripts": {
+    "webpack": "webpack -wd eval-source-map",
+    "dev": "babel-node src/server.js",
+    "start": "webpack -d eval-source-map && babel-node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comebackmagistr/bookworm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/comebackmagistr/bookworm/issues"
+  },
+  "homepage": "https://github.com/comebackmagistr/bookworm#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/node": "^7.20.2",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^9.1.0",
+    "eslint": "^8.27.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "morgan": "^1.10.0",
+    "sequelize-cli": "^6.5.2",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.3",
+    "react-simple-star-rating": "^5.1.6",
+    "sequelize": "^6.25.5",
+    "session-file-store": "^1.5.0",
+    "styled-components": "^5.3.6"
+  }
+}
